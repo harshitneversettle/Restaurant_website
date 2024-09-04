@@ -1,0 +1,412 @@
+*{
+    box-sizing: border-box ;
+    padding: 0 ;
+    margin :0 ;
+    font-family :"Roboto" , sans-serif; 
+    scroll-behavior: smooth ;
+}
+body {
+    width : 99vw ;
+    height: fit-content ; 
+}
+.container{
+    width : 99vw ;
+    height: 235vh  ;
+    background: rgba(162, 162, 241, 0.822) ;   
+}
+.heading{ 
+    height: 160px ;
+    background-color: rgba(0, 0, 0, 0.322) ;
+    display: flex;
+    justify-content: space-between;
+}
+.heading img{
+    padding: 10px;
+    border-radius: 50% ;
+}
+.firstsection{
+    margin-left : 2rem ;
+    display: flex;
+    align-items: center;
+}
+.firstsection h1{
+    margin-left : 0.7rem ;
+    font-size : 3.9em ;
+    color: rgb(239, 242, 245) ;
+    text-shadow: 0px 0px 6px white ;
+}
+.firstsection h3{
+    margin-left : 1rem ;
+    font-size: 1rem ;
+    color: aliceblue ;
+}
+.secondsection_content{  
+    display: flex ;
+    justify-content : space-evenly;
+    gap : 4rem ;
+    justify-content: center;
+    margin-top : 65px ;
+    margin-right : 3rem ;
+}
+
+.secondsection a{
+    color:aliceblue ;
+    font-size: 1.3rem ;
+    text-decoration: none;
+}
+.secondsection a:hover{
+    color: orange ;
+    cursor: pointer;
+}
+/* .welcome h2 {
+    width: 300px;
+    animation-name: myhello;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    background: gray;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    position:relative ;
+   
+} */
+.mainbody img{
+    margin-top: 7rem ;
+    border-radius: 50% ;
+    margin-left : -250px ;
+    box-shadow: 4px 4px 15px black ;
+}
+.mainbody{
+    display : flex ;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mainbody h1{
+    width : 100% ;
+    font-size : 3rem ;
+}
+.body_quote h1{
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    margin-left : 20px ;
+    font-size: 4.5em  ;
+}
+.body_quote .address{
+    margin-left : 70px ;
+    margin-top: 45px;
+    font-weight :500 ;
+    font-size: 20px ;
+}
+.body2{
+    margin-top: 15px ;
+    width : 99vw ;
+    height : 80vh ;
+    background-image: url("../images/photo_2024-07-26_01-43-53.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover ;  
+    animation: animate ease-in-out both ;
+    animation-timeline : view();
+    animation-range : entry ;
+}
+.ambience h1{
+    margin-left : 10px ;
+    padding-top: 10px ; 
+    color: aliceblue ;
+    font-size: 3em ;
+    text-shadow: 0px 0px 4px aliceblue;  
+}
+.ambianceimage1{
+    margin-left: 6rem ;
+    padding-top:2rem ;  
+}
+.caption a { 
+    text-decoration: none ;
+    color : #fbd604 ;
+    margin-left : 200px ;
+}
+.caption{
+    display: flex;
+    justify-content: end;
+    margin-top: 2rem ;
+    margin-right : 19em ;
+}
+.caption a:hover{
+    color : rgba(248, 212, 7, 0.402) ;
+}
+#body3{
+    display: flex ;
+    animation: animate both ;
+    animation-timeline : view();
+    animation-range : entry ;
+
+}
+#body3 img{
+    margin-left : 6rem  ;
+    margin-top: -6rem ;
+    box-shadow: 0px 0px 15px aliceblue ; 
+}
+#body3_content{
+    margin-top : 3rem ;
+    /* font-size: 2rem ; */
+    margin-left : 10rem ;
+}
+.body3_content .first{
+    margin-left: 12rem ;
+    font-weight: bolder;
+    border-right : 2.5px solid black ;
+    font-size : 4rem ;
+}
+.body3_content .second{
+    font-size : 2rem ;
+}
+.body3_content p{
+    margin-top: 2rem ;
+    font-size:2em ;
+    line-height : 1.8em ;
+    margin-left : 20px ;
+    text-align: justify;
+    margin-right : 2rem ;
+}
+.menubox{
+    width : 99vw ;
+    height:max-content;
+    min-height: 10rem ;
+    background-image: url(../images/photo_2024-07-26_01-43-53.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    /* grid-template-rows: repeat(2 , ); */
+}
+.menuheading{
+    width : 99vw ;
+}
+.menu{
+    display: grid ;
+    grid-template-columns: repeat(4, 1fr);
+    gap : 1rem ;
+}
+.menubox h1{
+    width : fit-content ;
+    margin-left : 10px ;
+    padding-top: 10px ;
+    font-size: 3.9em ;
+    text-shadow: 0px 0px 10px aliceblue;
+    color: aliceblue;
+    border-bottom : 2px solid aliceblue  ;
+    padding-bottom : 4px ; 
+    margin-left: 4rem ;
+}
+.menubox .box1 {
+    width : 400px ;
+    height : 465px ;
+    border-radius : 15px ;
+    background: #00000033;
+    margin-top: 2rem ;
+    box-shadow : 0px 0px 10px white ;
+    margin-left : 1.5rem ;
+    transition-timing-function: linear ;
+    transition-duration: 0.09s ;
+    background: #00000075;
+    opacity : 1 ;
+}
+.menubox .box1:hover{
+    transform: scale(1.09) ;
+    opacity : 0.55 ;  
+}
+.hello{
+    display: none;
+}
+.box1 img{
+    border-radius : 15px 15px 0 0 ;
+}
+.box1 .name {
+    color: aliceblue ;
+    font-family: monospace;
+    font-size: 1.5em ;
+    margin-left : 8px ;
+    line-height: 1.9rem ;
+}
+.box1 .description {
+    margin-top: 0.5rem ;
+    font-size: 1rem ;
+}
+.search{
+    width : 50rem ;
+    height : 55px ;
+    padding-left : 10px ;
+    font-size: 2rem ;
+    /* margin-left: 27em ; */
+    border-radius: 200px ;
+    size: 2rem ;
+}
+.headingandsearch{
+    display: flex ;
+    justify-content: space-between;  
+}
+.searchbar{
+    padding-top: 15px ;
+    padding-right: 20px ;
+}
+.buttonsearch{
+    font-size: 1.5rem ;
+    border-radius: 40px ;
+    padding: 2px ;
+    background-color: pink;
+    cursor:pointer;
+}
+.buttonsearch:hover{
+    background-color: rgba(255, 192, 203, 0.475);
+}
+.recipiecontainer{
+    text-align: center;
+    display : grid ;
+    grid-template-columns: repeat(4, 1fr);
+    gap : 1rem ;
+    padding: 15px ;
+    max-width: 100px ;
+    margin-left: 40px ;
+}
+.recipiecontainer img{
+    /* max-width: 500px ;
+    max-height: 500px ; */
+    width : 400px ;
+    height : 465px ;
+    border-radius : 15px ;
+    background: #00000033;
+    border: 2px solid aliceblue ;
+    margin-top: 4.5rem ;
+    box-shadow : 0px 0px 10px white ;
+    margin-left : 1.5rem ;
+    transition-timing-function: linear ;
+    transition-duration: 0.09s ;
+    background: #00000075;
+    opacity : 1 ;
+    cursor: pointer;
+}
+.recipiecontainer img:hover {
+    transform: scale(1.07) ;
+    opacity : 0.55 ;
+}
+.recipie h2{
+    font-size: 2em ;
+}
+.recipie p{
+    font-size: 1.2em ;
+    color: aliceblue ;
+}
+.buttonpopup{
+    margin-top: 1.5rem ;
+    background: rgba(255, 141, 160, 0.712) ;
+    font-size: 1.3em ;
+    border: none ;
+    border-radius : 30px ;
+    padding: 10px;
+    box-shadow: 0px 0px 8px aliceblue;
+    cursor :pointer;
+}
+
+.buttonpopup:hover{
+    background: rgba(255, 141, 160, 0.416) ;
+}
+.signup{
+    display: flex;
+    flex-direction: column;
+    gap : 2rem ;
+    margin-left : 8rem ;
+}
+.maincontainer{
+    padding: 6rem ;
+}
+.signup .username , .password{
+    width: 90%;
+    height: 55px;
+    font-family: 'Poppins',sans-serif;
+    font-size : 1.5em ;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    margin-left : 4rem ;
+}
+.buttoncontainer{
+    width : 79px ;
+}
+.buttoncontainer {
+    display: flex;
+    margin-left: 17rem ;   
+}
+.signup .submit , .reset{
+    font-family: 'Poppins',sans-serif;
+    font-size : 1.3em ;
+    border: 2px solid #d1d3d4;
+    padding: 6px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 2rem ;
+    margin-left : 10rem ;
+}
+.reset{
+    margin-left : -0.5rem ;
+}
+.submit{
+    margin-right : 2rem ;
+}
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    gap : 1.5rem ;
+}
+.extra{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4.2rem
+}
+.close{
+    width : 60px ;
+    padding: 2px ;
+    border-radius: 5px ;
+    border: none ;
+    background-color: rgba(255, 0, 0, 0.74);
+    border: 2px solid rgba(0, 0, 0, 0.756);
+    font-weight: 500;
+    font-size: 1.2em ;
+    margin-bottom: 30px ;
+    margin-left : 38em ;
+    margin-top : 5px ;
+    color: black ;
+}
+.signup{
+    background-color: black ;
+    width : 800px ; ;
+    height : 60vh ;
+    position :absolute ;
+    top : 220px ;
+    left : 420px ;
+    background: linear-gradient(
+        135deg,
+        #8052ec,
+        #d161ff
+    );
+    outline : none ;
+    border-radius : 15px ;
+    border: 3px solid rgba(0, 0, 0, 0.6) ;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    /* opacity: 0; */
+    display: none;
+    position:fixed;
+}
+
+
+@keyframes animate {
+    from {
+      opacity : 0 ;
+      
+    }
+    to {
+      opacity : 1 ;
+      
+    }
+  }
